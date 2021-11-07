@@ -37,10 +37,10 @@
         <!-- Snippet from "Add text fields" section goes here. -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            app:boxBackgroundColor="@color/teal_700"
+
 
             android:layout_height="wrap_content" android:layout_margin="4dp"
-            android:hint="Enter username">
+            android:hint="Username">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:id="@+id/usernameEditText"
@@ -54,9 +54,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             app:boxStrokeColor="@color/teal_700"
-            app:boxBackgroundColor="@color/colorAccent"
+
             android:layout_height="wrap_content" android:layout_margin="4dp"
-            android:hint="Enter Password">
+            android:hint="Password">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
