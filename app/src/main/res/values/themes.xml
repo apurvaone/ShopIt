@@ -14,11 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"
         >
 
         <item name="colorPrimary">#0B0230</item>
         <item name="colorPrimaryDark">#060219</item>
+        <item name="colorAccent">#E0E0E0</item>
 
 
 

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/loginPageBackgroundColor"
     android:layout_height="match_parent"
 
     tools:context=".LoginFragment">
@@ -24,17 +25,46 @@
             android:src="@drawable/ic_d3_seeklogo_com"
             android:layout_marginBottom="16dp"
 
-             />
 
+             />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="132dp"
-            android:text="D3 group"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
-            android:textAllCaps="true"
-            android:textSize="16sp" />
+            android:layout_marginBottom="130dp"
+            />
+
+
+        <!-- Snippet from "Add text fields" section goes here. -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@color/teal_700"
+
+            android:layout_height="wrap_content" android:layout_margin="4dp"
+            android:hint="Enter username">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/usernameEditText"
+
+                android:layout_height="wrap_content"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Snippet from "Add buttons" section goes here. -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxStrokeColor="@color/teal_700"
+            app:boxBackgroundColor="@color/colorAccent"
+            android:layout_height="wrap_content" android:layout_margin="4dp"
+            android:hint="Enter Password">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordEditText"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Snippet from "Add text fields" section goes here. -->
 
