@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#E0E0E0</color>
+
+    <color name="imageBg">#AFADAD</color>
     <color name="loginPageBackgroundColor">#FFFFFF</color>
     <color name="toolbarIconColor">#FFFFFF</color>
 </resources>

@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_product_grid.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -40,6 +42,15 @@ class ProductGrid : Fragment() {
 
         // Set up the toolbar.
         (activity as AppCompatActivity).setSupportActionBar(view.app_bar)
+
+        view.recycler_view.setHasFixedSize(true)
+        view.recycler_view.layoutManager = GridLayoutManager(context, 2, RecyclerView.VERTICAL, false)
+        val adapter = ProductCardRecyclerViewAdapter(
+            ProductEntry.initProductEntryList(resources))
+        view.recycler_view.adapter = adapter
+        val largePadding = resources.getDimensionPixelSize(R.dimen.shr_product_grid_spacing)
+        val smallPadding = resources.getDimensionPixelSize(R.dimen.shr_product_grid_spacing_small)
+        view.recycler_view.addItemDecoration(ProductGridItemDecoration(largePadding, smallPadding))
         return view;
     }
 
