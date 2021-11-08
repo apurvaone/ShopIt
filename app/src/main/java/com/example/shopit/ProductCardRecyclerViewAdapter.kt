@@ -21,6 +21,7 @@ class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>
             holder.productTitle.text = product.title
             holder.productPrice.text = product.price
             ImageRequester.setImageFromUrl(holder.productImage, product.url)
+
         }
     }
 
