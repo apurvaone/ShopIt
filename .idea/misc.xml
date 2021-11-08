@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/drawable-v24/shr_filter.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/drawable-v24/shr_search.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/drawable/ic_d3_seeklogo_com.xml" value="0.1" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/drawable/ic_menu.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/layout/fragment_login.xml" value="0.1796875" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/layout/fragment_product_grid.xml" value="0.1" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/ShopIt/app/src/main/res/menu/menu.xml" value="0.1796875" />
       </map>
     </option>
   </component>

@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="shr_error_password">Password should contain 8 characters</string>
+    <string name="shr_app_name">ShopIt</string>
+    <string name="shr_search_title">Search</string>
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_product_title">Title</string>
+    <string name="shr_product_description">Price</string>
 </resources>
