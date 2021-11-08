@@ -5,13 +5,14 @@
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@android:color/white"
     app:cardElevation="2dp"
+    android:id="@+id/productCard"
     app:cardCornerRadius="7dp"
     app:cardPreventCornerOverlap="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/productCard"
+
 
         android:orientation="vertical">
 

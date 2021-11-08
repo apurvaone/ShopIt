@@ -1,5 +1,6 @@
 package com.example.shopit
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
  * Adapter used to show a simple grid of products.
  */
 class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>) : RecyclerView.Adapter<ProductCardViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductCardViewHolder {
         val layoutView = LayoutInflater.from(parent.context).inflate(R.layout.shr_product_card, parent, false)
@@ -21,6 +23,11 @@ class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>
             holder.productTitle.text = product.title
             holder.productPrice.text = product.price
             ImageRequester.setImageFromUrl(holder.productImage, product.url)
+
+            holder.productCard.setOnClickListener {
+                val context= holder.itemView.context
+                (context as NavigationHost).navigateTo(DetailFragment(), true)
+            }
 
         }
     }
