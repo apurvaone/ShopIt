@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@android:color/white"
     app:cardElevation="2dp"
+    app:cardCornerRadius="7dp"
     app:cardPreventCornerOverlap="true">
 
     <LinearLayout
@@ -16,7 +17,7 @@
             android:id="@+id/product_image"
             android:layout_width="match_parent"
             android:layout_height="@dimen/shr_product_card_image_height"
-            android:background="@color/imageBg"
+            android:background="@color/colorAccent"
             android:scaleType="centerCrop" />
 
         <LinearLayout
