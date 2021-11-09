@@ -35,7 +35,7 @@ val amount= 4999
                 `object`.put("description", "Test payment")
 
                 // to set theme color
-                `object`.put("theme.color", "")
+                `object`.put("theme.color", "#060219")
 
                 // put the currency
                 `object`.put("currency", "INR")
@@ -64,6 +64,6 @@ val amount= 4999
     }
 
     override fun onPaymentError(p0: Int, p1: String?) {
-        Toast.makeText(this, "Payment Failed due to error : " + p1, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Chill: Just because it is a test payment", Toast.LENGTH_SHORT).show()
     }
 }
