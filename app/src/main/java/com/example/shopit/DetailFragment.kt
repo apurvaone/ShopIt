@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_detail.*
+import kotlinx.android.synthetic.main.fragment_detail.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -43,7 +44,9 @@ class DetailFragment : Fragment() {
         // Inflate the layout for this fragment
 
         val view= inflater.inflate(R.layout.fragment_detail, container, false)
-
+        view.buyNow.setOnClickListener {
+            (activity as NavigationHost).navigateTo(CheckOutFragment(), true)
+        }
         return view
     }
 

@@ -8,7 +8,7 @@ import com.google.gson.reflect.TypeToken
 import java.io.BufferedReader
 import java.util.*
 
-/**
+/** rzp_test_CcyHHmDiAaljcx
  * A product entry in the list of products.
  */
 class ProductEntry(
