@@ -7,7 +7,7 @@
     tools:context=".PaymentConfirmationActivity">
 
     <Button
-        android:id="@+id/buyNow"
+        android:id="@+id/buycnf"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="635dp"
