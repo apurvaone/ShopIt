@@ -4,6 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import android.os.Bundle
+
+
+
 
 
 /**
@@ -26,7 +30,14 @@ class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>
 
             holder.productCard.setOnClickListener {
                 val context= holder.itemView.context
-                (context as NavigationHost).navigateTo(DetailFragment(), true)
+                val bundle = Bundle()
+                val fragmentB = DetailFragment()
+
+                bundle.putString("Title", product.title)
+                bundle.putString("Price", product.price)
+
+                fragmentB.arguments = bundle
+                (context as NavigationHost).navigateTo(fragmentB, true)
             }
 
         }
