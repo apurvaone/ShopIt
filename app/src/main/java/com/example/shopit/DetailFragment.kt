@@ -5,8 +5,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.razorpay.PaymentResultListener
 import kotlinx.android.synthetic.main.fragment_detail.*
 import kotlinx.android.synthetic.main.fragment_detail.view.*
+import com.razorpay.Checkout
+import org.json.JSONException
+
+import org.json.JSONObject
+import android.content.Intent
+
+
+
+
+
+
+
+
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,7 +34,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [DetailFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class DetailFragment : Fragment() {
+class DetailFragment : Fragment(),PaymentResultListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -45,8 +61,46 @@ class DetailFragment : Fragment() {
 
         val view= inflater.inflate(R.layout.fragment_detail, container, false)
         view.buyNow.setOnClickListener {
-            (activity as NavigationHost).navigateTo(CheckOutFragment(), true)
+            val intent = Intent(activity, PaymentConfirmationActivity::class.java)
+            startActivity(intent)
         }
+
+//        view.buyNow.setOnClickListener {
+//            val amount= 4999
+//            val checkout = Checkout()
+//            checkout.setKeyID("rzp_test_CcyHHmDiAaljcx")
+//            checkout.setImage(R.drawable.logo1)
+//
+//            val obj = JSONObject()
+//            try {
+//                // to put name
+//                obj.put("name", "ShopIt")
+//
+//                // put description
+//                obj.put("description", "Test payment")
+//
+//                // to set theme color
+//
+//
+//                // put the currency
+//                obj.put("currency", "INR")
+//
+//                // put amount
+//                obj.put("amount", amount)
+//
+//                // put mobile number
+//                obj.put("prefill.contact", "9284064503")
+//
+//                // put email
+//                obj.put("prefill.email", "apurvashukla15@gmail.com")
+//
+//                // open razorpay to checkout activity
+//                checkout.open(DetailFragment().activity, obj)
+//            } catch (e: JSONException) {
+//                e.printStackTrace()
+//            }
+//           // (activity as NavigationHost).navigateTo(CheckOutFragment(), true)
+//        }
         return view
     }
 
@@ -71,4 +125,13 @@ class DetailFragment : Fragment() {
                 }
             }
     }
-}
+
+    override fun onPaymentSuccess(p0: String?) {
+        Toast.makeText(context, "Payment is successful : " + p0, Toast.LENGTH_SHORT).show();
+    }
+    override fun onPaymentError(p0: Int, p1: String?) {
+        Toast.makeText(context, "Payment Failed due to error : " + p1, Toast.LENGTH_SHORT).show();
+    }
+    }
+
+
