@@ -2,15 +2,18 @@
 
 ShopIt is a basic template ecommerce application with payment integration(RazorPay), made using Android Architechture componets and Material Components Library.
 
-Screenshots-
+ ### Tech Used ###
+  * Architechture- MVVM
+  * Language- Kotlin
+  * UI-Material Design Library(Material.io)
+  * Database- Room,firebase
 
-![WhatsApp Image 2021-11-09 at 13 02 16](https://user-images.githubusercontent.com/57245377/141045120-2455d3c1-f64c-411f-891c-d525af894abf.jpeg)
-![WhatsApp Image 2021-11-09 at 13 02 16 (1)](https://user-images.githubusercontent.com/57245377/141045305-a0438e6a-ce84-4297-8175-51b337676cd2.jpeg)
-![WhatsApp Image 2021-11-09 at 13 02 16 (2)](https://user-images.githubusercontent.com/57245377/141045361-770f612d-7e66-439f-a729-a16f6f789920.jpeg)
-![WhatsApp Image 2021-11-09 at 13 02 16 (5)](https://user-images.githubusercontent.com/57245377/141045396-c4557795-f4ce-4430-80c3-f8e912c1630d.jpeg)
-![WhatsApp Image 2021-11-09 at 13 02 16 (6)](https://user-images.githubusercontent.com/57245377/141045471-1cbef004-4efa-4ed0-80fd-792a79214066.jpeg)
+ ### Screenshots ###
 
+![sup1](https://user-images.githubusercontent.com/57245377/141046873-d34d0f6c-7ed6-4420-8ec0-b5e888c8594d.jpeg)      ![sup2](https://user-images.githubusercontent.com/57245377/141046989-1e070dd0-b120-403c-b735-5a68cad06ec2.jpeg)
 
+![sup3](https://user-images.githubusercontent.com/57245377/141047141-a3012f83-51be-4a22-a957-6821426aeca9.jpeg)
+![sup4](https://user-images.githubusercontent.com/57245377/141047280-ce65fa55-3eb6-46cd-9608-b4b9a44e0be2.jpeg)
 
 
 
