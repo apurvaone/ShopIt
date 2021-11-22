@@ -23,7 +23,7 @@ class PaymentConfirmationActivity : AppCompatActivity(),PaymentResultListener{
 val amount= 4999
         buycnf.setOnClickListener {
             val checkout = Checkout()
-            checkout.setKeyID("rzp_test_CcyHHmDiAaljcx")
+            checkout.setKeyID("YourKey")
             checkout.setImage(R.drawable.logo1)
 
             val `object` = JSONObject()
